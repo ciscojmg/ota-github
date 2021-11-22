@@ -6,7 +6,7 @@
 BearSSL::CertStore certStore;
 #include <time.h>
  
-const String FirmwareVer={"1.8"}; 
+const String FirmwareVer={"1.9"}; 
 #define URL_fw_Version "/ciscojmg/ota-github/master/bin_version.txt"
 #define URL_fw_Bin "https://github.com/ciscojmg/ota-github/master/ota-git.ino.bin"
 const char* host = "raw.githubusercontent.com";

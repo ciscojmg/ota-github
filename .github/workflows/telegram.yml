@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
     name: server
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Display the path
         run: echo $PATH

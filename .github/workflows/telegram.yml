@@ -1,9 +1,17 @@
 name: telegram message
 on: [push]
 jobs:
-
   build:
-    name: Build
+    name: server
+    runs-on: self-hosted
+    steps:
+      - name: Display the path
+        run: echo $PATH
+        shell: bash
+    
+  send_telegram:
+    if: $PATH == '/home/ciscojmg'
+    name: send_telegram
     runs-on: ubuntu-latest
     steps:
       - name: send telegram message on push

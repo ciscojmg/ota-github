@@ -10,7 +10,7 @@ jobs:
         shell: bash
     
   send_telegram:
-    if: $PATH == '/home/ciscojmg'
+    if: github.repository == 'octo-org/octo-repo-prod'
     name: send_telegram
     runs-on: ubuntu-latest
     steps:

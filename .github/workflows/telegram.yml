@@ -10,7 +10,7 @@ jobs:
         shell: bash
     
   send_telegram:
-    # if: github.repository == 'ciscojmg/ota-github'
+    #  if: github.repository == 'ciscojmg/ota-github'
     name: send_telegram
     runs-on: ubuntu-latest
     steps:

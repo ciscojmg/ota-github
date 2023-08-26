@@ -20,6 +20,8 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
+            ${{ secrets.TELEGRAM_TO }}
+            ${{ secrets.TELEGRAM_TOKEN }}
             ${{ github.actor }} created commit:
             Commit message: ${{ github.event.commits[0].message }}
             
